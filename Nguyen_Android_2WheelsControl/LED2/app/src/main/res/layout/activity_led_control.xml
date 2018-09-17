@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textViewKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Ki"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editTextKi"
+        android:layout_toStartOf="@+id/editTextKi" />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textViewKp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextKi"
+        android:layout_marginTop="39dp"
+        android:layout_toStartOf="@+id/editTextKi"
+        android:layout_toLeftOf="@+id/editTextKi"
+
+        android:text="Kp" />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textViewKd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewKp"
+        android:layout_below="@+id/editTextKp"
+        android:layout_marginTop="35dp"
+        android:layout_alignLeft="@+id/textViewKp"
+        android:text="Kd" />
+
+    <EditText
+        android:id="@+id/editTextKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:layout_alignBaseline="@+id/textViewKi"
+        android:layout_alignBottom="@+id/textViewKi"
+        android:layout_alignRight="@+id/textViewControl"
+        android:layout_alignEnd="@+id/textViewControl" />
+
+    <EditText
+        android:id="@+id/editTextKp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewKp"
+        android:layout_alignBottom="@+id/textViewKp"
+        android:layout_alignLeft="@+id/editTextKi"
+        android:layout_alignStart="@+id/editTextKi"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextKd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewKd"
+        android:layout_alignBottom="@+id/textViewKd"
+        android:layout_alignLeft="@+id/editTextKp"
+        android:layout_alignStart="@+id/editTextKp"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Forward"
+        android:layout_below="@+id/textViewControl"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Left"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_below="@+id/buttonForward"
+        android:layout_toStartOf="@+id/textViewControl"
+        android:layout_toLeftOf="@+id/textViewControl"/>
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonReverse"
+        android:layout_alignBottom="@+id/buttonReverse"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/textViewControl"
+        android:layout_toRightOf="@+id/textViewControl"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/buttonReverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonLeft"
+        android:layout_alignBottom="@+id/buttonLeft"
+        android:layout_alignStart="@+id/buttonForward"
+        android:layout_alignLeft="@+id/buttonForward"
+        android:text="Reverse" />
+
+    <TextView
+        android:textSize="20dp"
+        android:id="@+id/textViewControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control Console"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_alignBaseline="@+id/buttonForward"
+        android:layout_alignBottom="@+id/buttonForward"
+        android:layout_alignLeft="@+id/buttonRight"
+        android:layout_alignStart="@+id/buttonRight" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editTextKi"
+        android:layout_toEndOf="@+id/editTextKi"
+        android:layout_toRightOf="@+id/editTextKi"
+        android:text="Ki" />
+
+    <Button
+        android:id="@+id/buttonKp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextKp"
+        android:layout_toEndOf="@+id/editTextKp"
+        android:layout_toRightOf="@+id/editTextKp"
+        android:text="Kp" />
+
+    <Button
+        android:id="@+id/buttonKd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextKd"
+        android:layout_toEndOf="@+id/editTextKd"
+        android:layout_toRightOf="@+id/editTextKd"
+        android:text="Kd" />
+
+</RelativeLayout>
