@@ -1,1 +1,0 @@
-"./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "./MPU6050/MPU6050.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd" -l"C:/ti/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib" -llibc.a 

@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=DEBUG_TDO Pin=P2-3
-Removed Pin From Net: NetName=DEBUG_TDI Pin=P2-4
-Added Pin To Net: NetName=DEBUG_TDI Pin=P2-3
-Added Pin To Net: NetName=DEBUG_TDO Pin=P2-4
